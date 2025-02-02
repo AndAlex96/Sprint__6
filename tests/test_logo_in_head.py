@@ -22,7 +22,7 @@ class TestWorkLogoYaAndScooter:
         order_page.click_look_to_status_button()
 
         order_page.click_on_logo_ya_in_head()
-        base_page.assert_current_url(URL='https://dzen.ru/?yredirect=true')
+        base_page.assert_current_url_new_window(URL='https://dzen.ru/?yredirect=true')
 
     @allure.title('Проверка открытия главной страницы сервиса при нажатии на логотип Самоката')
     def test_click_on_logo_scooter_in_head(self, driver):
@@ -39,5 +39,5 @@ class TestWorkLogoYaAndScooter:
 
         order_page.click_look_to_status_button()
         order_page.click_on_logo_scooter_in_head()
-        base_page.assern_current_url(URL='https://qa-scooter.praktikum-services.ru/')
+        base_page.assert_current_url(URL='https://qa-scooter.praktikum-services.ru/')
         
